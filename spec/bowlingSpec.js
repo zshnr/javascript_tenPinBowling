@@ -16,5 +16,10 @@ describe('Ten Pin Bowling', function(){
 		expect(game.ball).toEqual(1);
 	});
 
+	it('Ball can knock down pins', function(){
+		game.throwBall();
+		expect(typeof game.pins).toEqual('number');
+	});
+
 
 });
